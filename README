@@ -1,0 +1,13 @@
+rastitch is a code to stitch binary files, *.drb.  This runs pretty
+light so you can run it on a workstation easily.  Do "ls -1 whatever"
+to create a list of drb files as you can see in my dir.  I think I
+named the list file as *.list.  Then issue "rastitch fileName.list".
+This will stitch drb files together and makes filename.list.drb file.
+Obviously choose only the same variable name and the same time steps
+only when you use wild card on ls command.
+
+drb2ppm can be used on any drb files.  Issue "drb2ppm filename.drb
+colorLevels" to run it.  I nornally use 64 or 128 for color level.
+This will create filename.drb.ppm file.  I normally use create a shell
+script with macro to run the same thing on all drb files.  Let me know
+if you are not familiar with it.
